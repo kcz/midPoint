@@ -8,10 +8,11 @@ const fileMapping = {
 }
 
 for(let x in fileMapping){
-  const midPointRes = fs.readFileSync(x, {encoding: "utf-8"})
+  const midPointResPath = path.join(__dirname, 'midPoint-locales', x)
+  const midPointRes = fs.readFileSync(midPointResPath, {encoding: "utf-8"})
   const midPointResObj = propertiesToJSON(midPointRes)
 
-  const siteResPath = path.join(__dirname, 'site-origin-locales', fileMapping[x])
+  const siteResPath = path.join(__dirname, 'site-locales', fileMapping[x])
   const siteResObj = require(siteResPath)
 
   const dstResPath = path.join('..','..','src','languageProvider','locales',fileMapping[x])

@@ -1,0 +1,13 @@
+{
+  "name": "locales-merge",
+  "version": "1.0.0",
+  "description": "Merge locale files of midPoint and site template",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "properties-to-json": "^0.1.4"
+  }
+}
