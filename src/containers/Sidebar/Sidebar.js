@@ -13,6 +13,7 @@ import Logo from '../../components/utility/logo';
 import themes from '../../settings/themes';
 import { themeConfig } from '../../settings';
 
+
 const SubMenu = Menu.SubMenu;
 const { Sider } = Layout;
 
@@ -85,8 +86,8 @@ class Sidebar extends Component {
         >
           {children.map(child => {
             const linkTo = child.withoutDashboard
-              ? `/${child.key}`
-              : `${url}/${child.key}`;
+            ? `/${child.key}`
+            : `${url}/${child.key}`;
             return (
               <Menu.Item style={submenuStyle} key={child.key}>
                 <Link style={submenuColor} to={linkTo}>
@@ -147,8 +148,6 @@ class Sidebar extends Component {
           collapsed={collapsed}
           width={240}
           className="isomorphicSidebar"
-          onMouseEnter={onMouseEnter}
-          onMouseLeave={onMouseLeave}
           style={styling}
         >
           <Logo collapsed={collapsed} />
@@ -162,9 +161,27 @@ class Sidebar extends Component {
               selectedKeys={app.current}
               onOpenChange={this.onOpenChange}
             >
-              {options.map(singleOption =>
-                this.getMenuItem({ submenuStyle, submenuColor, singleOption })
-              )}
+              {
+                options.map(option=>{
+                    const {children, leftIcon, label, key} = option
+                    const items = children.map(singleOption =>
+                      this.getMenuItem({ submenuStyle, submenuColor, singleOption })
+                    )
+                    const divider = (
+                      <Menu.Item className='menuItemHeader' key={key} disabled={true}>
+                        <span className="isoMenuHolder">
+                          <i className={leftIcon} />
+                          <span className="nav-text">
+                            <IntlMessages id={label} />
+                          </span>
+                        </span>
+                      </Menu.Item>
+                    )
+                    items.unshift(divider)
+                    return items
+                })
+              }
+
             </Menu>
           </Scrollbars>
         </Sider>
