@@ -5,11 +5,27 @@ import asyncComponent from "../../helpers/AsyncFunc";
 const routes = [
   {
     path: "",
-    component: asyncComponent(() => import("../dashboard"))
+    component: asyncComponent(() => import("../Page/dashboard"))
   },
   {
-    path: "blankPage",
-    component: asyncComponent(() => import("../blankPage"))
+    path: "PageAdmin.menu.selfDashboard",
+    component: asyncComponent(() => import("../Page/selfDashboard"))
+  },
+  {
+    path: "PageAdmin.menu.profile",
+    component: asyncComponent(() => import("../Page/profile"))
+  },
+  {
+    path: "PageAdmin.menu.credentials",
+    component: asyncComponent(() => import("../Page/credentials"))
+  },
+  {
+    path: "PageAdmin.menu.request",
+    component: asyncComponent(() => import("../Page/request"))
+  },
+  {
+    path: "*",
+    component: asyncComponent(() => import("../Page/blankPage"))
   }
 ];
 

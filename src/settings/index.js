@@ -4,8 +4,8 @@ export default {
 
 const siteConfig = {
   siteName: 'midPoint',
-  siteIcon: 'ion-ios-finger-print',
-  footerText: 'midPoint ©2018 Created by Drew',
+  siteIcon: 'ion-link',
+  footerText: 'midPoint ©2018',
 };
 const themeConfig = {
   topbar: 'themedefault',

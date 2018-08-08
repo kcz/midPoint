@@ -27,7 +27,7 @@ export class App extends Component {
       <ThemeProvider theme={themes[themeConfig.theme]}>
         <AppHolder>
           <Layout style={{ height: appHeight }}>
-            <Debounce time="1000" handler="onResize">
+            <Debounce time="300" handler="onResize">
               <WindowResizeListener
                 onResize={windowSize =>
                   this.props.toggleAll(
