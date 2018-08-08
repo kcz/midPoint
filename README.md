@@ -57,3 +57,6 @@ Refactor midPoint Web UI from MVC to SPA
 - [Commit message 和 Change log 编写指南](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
 - [commitlint](http://marionebl.github.io/commitlint/#/./guides-local-setup?id=guides-local-setup)
 - [conventionalChangelog](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-cli)
+
+### Ionicons v2
+[Ionicons Cheatsheet](https://ionicons.com/v2/cheatsheet.html)
