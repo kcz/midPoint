@@ -56,7 +56,7 @@ const TopbarWrapper = styled.div`
         cursor: pointer;
 
         &:before {
-          content: "\f32a";
+          content: "\f20e";
           font-family: "Ionicons";
           font-size: 26px;
           color: inherit;

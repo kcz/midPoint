@@ -40,7 +40,6 @@ const TopbarDropdownWrapper = styled.div`
 
   .isoDropdownBody {
     width: 100%;
-    height: 300px;
     overflow-y: auto;
     display: flex;
     flex-direction: column;

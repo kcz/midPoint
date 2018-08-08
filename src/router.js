@@ -39,16 +39,16 @@ const PublicRoutes = ({ history, isLoggedIn }) => {
         />
         <Route
           exact
-          path={'/swagger-ui'}
+          path={'/selfDashboard'}
           component={asyncComponent(() => import('./containers/Swagger/SwaggerUI'))}
         />
         <Route
           exact
-          path={'/swagger-editor2'}
-          component={asyncComponent(() => import('./containers/Swagger/SwaggerEditor'))}
+          path={'/swagger-ui'}
+          component={asyncComponent(() => import('./containers/Swagger/SwaggerUI'))}
         />
         <RestrictedRoute
-          path="/dashboard"
+          path="/midPoint"
           component={App}
           isLoggedIn={isLoggedIn}
         />

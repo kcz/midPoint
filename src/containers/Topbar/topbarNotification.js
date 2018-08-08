@@ -7,27 +7,15 @@ import TopbarDropdownWrapper from './topbarDropdown.style';
 const demoNotifications = [
   {
     id: 1,
-    name: 'David Doe',
+    name: 'Drew',
     notification:
-      'A National Book Award Finalist An Edgar Award Finalist A California Book Award Gold Medal Winner'
+      'midPoint SPA v0.1 is released!'
   },
   {
     id: 2,
-    name: 'Navis Doe',
+    name: 'System Admin',
     notification:
-      'A National Book Award Finalist An Edgar Award Finalist A California Book Award Gold Medal Winner'
-  },
-  {
-    id: 3,
-    name: 'Emanual Doe',
-    notification:
-      'A National Book Award Finalist An Edgar Award Finalist A California Book Award Gold Medal Winner'
-  },
-  {
-    id: 4,
-    name: 'Dowain Doe',
-    notification:
-      'A National Book Award Finalist An Edgar Award Finalist A California Book Award Gold Medal Winner'
+      'Now you can use Swagger UI and Editor to develop API.'
   }
 ];
 
