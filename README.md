@@ -1,7 +1,7 @@
-# midPoint SPA
+# Neptune SPA
 
 ## Objective
-Refact midPoint Web UI from MVC to SPA
+Refact Neptune Web UI from MVC to SPA
 
 ## Project Structure
 ### Dependencies

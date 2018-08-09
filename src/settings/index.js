@@ -3,9 +3,9 @@ export default {
 };
 
 const siteConfig = {
-  siteName: 'midPoint',
+  siteName: 'neptune',
   siteIcon: 'ion-link',
-  footerText: 'midPoint ©2018',
+  footerText: 'neptune ©2018',
 };
 const themeConfig = {
   topbar: 'themedefault',

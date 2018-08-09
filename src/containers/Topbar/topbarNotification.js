@@ -9,7 +9,7 @@ const demoNotifications = [
     id: 1,
     name: 'Drew',
     notification:
-      'midPoint SPA v0.1 is released!'
+      'neptune SPA v0.1 is released!'
   },
   {
     id: 2,

@@ -48,7 +48,7 @@ const PublicRoutes = ({ history, isLoggedIn }) => {
           component={asyncComponent(() => import('./containers/Swagger/SwaggerUI'))}
         />
         <RestrictedRoute
-          path="/midPoint"
+          path="/neptune"
           component={App}
           isLoggedIn={isLoggedIn}
         />

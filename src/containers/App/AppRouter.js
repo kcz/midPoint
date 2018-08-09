@@ -5,7 +5,7 @@ import asyncComponent from "../../helpers/AsyncFunc";
 const routes = [
   {
     path: "",
-    component: ()=>(<Redirect to="/midPoint/PageAdmin.menu.selfDashboard" />)
+    component: ()=>(<Redirect to="/neptune/PageAdmin.menu.selfDashboard" />)
   },
   {
     path: "PageAdmin.menu.selfDashboard",
