@@ -24,7 +24,7 @@ export default class extends Component {
         </div>
 
         {/* TODO: move Link outside */}
-        <Link className="isoContentWrapper" to={link? link: "javascript:void 0"}>
+        <Link className="isoContentWrapper" to={link? link: "/"}>
           <h3 className="isoStatNumber" style={textColor}>
             {number}
           </h3>

@@ -1,16 +1,12 @@
 import React from 'react';
-import { Table, Divider, Icon } from "antd";
-
-import ContentHolder from '../../../components/utility/contentHolder';
-import Box from '../../../components/utility/box';
+import { Table } from "antd";
 
 
 
 const columns = [{
   title: 'Name',
   dataIndex: 'name',
-  key: 'name',
-  render: text => <a href="javascript:;">{text}</a>,
+  key: 'name'
   }, 
   {
     title: 'Stage',

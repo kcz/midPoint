@@ -14,9 +14,6 @@ import MyWorkItems from './MyWorkItems'
 export default class extends Component {
   render() {
     const { rowStyle, colStyle, gutter } = basicStyle;
-    
-    
-    const ButtonGroup = Button.ButtonGroup;
 
     return (
       <LayoutContentWrapper>

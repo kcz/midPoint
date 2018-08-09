@@ -113,22 +113,10 @@ class Sidebar extends Component {
     );
   };
   render() {
-    const { app, toggleOpenDrawer, height } = this.props;
+    const { app, height } = this.props;
     const collapsed = clone(app.collapsed) && !clone(app.openDrawer);
-    const { openDrawer } = app;
     const mode = collapsed === true ? 'vertical' : 'inline';
-    const onMouseEnter = event => {
-      if (openDrawer === false) {
-        toggleOpenDrawer();
-      }
-      return;
-    };
-    const onMouseLeave = () => {
-      if (openDrawer === true) {
-        toggleOpenDrawer();
-      }
-      return;
-    };
+
     const customizedTheme = themes[themeConfig.theme];
     const styling = {
       backgroundColor: customizedTheme.backgroundColor
