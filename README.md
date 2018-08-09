@@ -1,7 +1,7 @@
 # midPoint SPA
 
 ## Objective
-Refactor midPoint Web UI from MVC to SPA
+Refact midPoint Web UI from MVC to SPA
 
 ## Project Structure
 ### Dependencies
