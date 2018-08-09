@@ -1,31 +1,31 @@
 import React, { Component } from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import asyncComponent from "../../helpers/AsyncFunc";
 
 const routes = [
   {
     path: "",
-    component: asyncComponent(() => import("../Page/dashboard"))
+    component: ()=>(<Redirect to="/midPoint/PageAdmin.menu.selfDashboard" />)
   },
   {
     path: "PageAdmin.menu.selfDashboard",
-    component: asyncComponent(() => import("../Page/selfDashboard"))
+    component: asyncComponent(() => import("../selfService/selfDashboard/index"))
   },
   {
     path: "PageAdmin.menu.profile",
-    component: asyncComponent(() => import("../Page/profile"))
+    component: asyncComponent(() => import("../selfService/profile/index"))
   },
   {
     path: "PageAdmin.menu.credentials",
-    component: asyncComponent(() => import("../Page/credentials"))
+    component: asyncComponent(() => import("../selfService/Credentials"))
   },
   {
     path: "PageAdmin.menu.request",
-    component: asyncComponent(() => import("../Page/request"))
+    component: asyncComponent(() => import("../selfService/Request"))
   },
   {
     path: "*",
-    component: asyncComponent(() => import("../Page/blankPage"))
+    component: asyncComponent(() => import("../Page/BlankPage"))
   }
 ];
 
@@ -34,6 +34,7 @@ class AppRouter extends Component {
     const { url, style } = this.props;
     return (
       <div style={style}>
+        <Switch>
         {routes.map(singleRoute => {
           const { path, exact, ...otherProps } = singleRoute;
           return (
@@ -45,6 +46,7 @@ class AppRouter extends Component {
             />
           );
         })}
+        </Switch>
       </div>
     );
   }

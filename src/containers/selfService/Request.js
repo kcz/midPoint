@@ -7,7 +7,7 @@ export default class extends Component {
     return (
       <LayoutContentWrapper style={{ height: '100vh' }}>
         <LayoutContent>
-          <h1>profile</h1>
+          <h1>Page Request a Role</h1>
         </LayoutContent>
       </LayoutContentWrapper>
     );
