@@ -20,6 +20,7 @@ Refactor midPoint Web UI from MVC to SPA
 
 ## Milestones
 ### v0.1: Init Project Structure & Dev Libs
+### v0.2: Add Sidebar and Sample Pages
 
 
 
@@ -36,13 +37,15 @@ Refactor midPoint Web UI from MVC to SPA
 
 - Write test cases with Jest
 - Integrate Swagger Editor in the form of npm module 
+- [How to avoid nested relative reference path](https://github.com/sorrycc/roadhog/issues/349)
 
 
 
-## New libs
+## Styles
+### Why Styled Components?
 
-- styled-component
-- redux-saga
+[CSS Evolution: From CSS, SASS, BEM, CSS Modules to Styled Components](https://medium.com/@perezpriego7/css-evolution-from-css-sass-bem-css-modules-to-styled-components-d4c1da3a659b)
+
 
 ## API(Swagger)
 
@@ -50,6 +53,7 @@ Refactor midPoint Web UI from MVC to SPA
 - [Swagger Tools and Integrations](https://swagger.io/tools/open-source/open-source-integrations/)
 - [Swagger从入门到精通](https://huangwenchao.gitbooks.io/swagger/content/)
 - [定制SwaggerUI（React的实现，有插件机制）](https://github.com/swagger-api/swagger-ui/tree/c9e8a67579abcf2b87224b0f058c02fa63561fba/docs/customization)
+
 
 ## Docs
 
