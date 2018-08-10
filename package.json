@@ -42,6 +42,7 @@
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.1",
     "conventional-changelog-cli": "^2.0.1",
+    "firebase-tools": "^4.0.3",
     "husky": "^0.14.3",
     "react-app-rewired": "^1.4.0",
     "swagger-editor": "^3.6.8",
