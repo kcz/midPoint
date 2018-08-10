@@ -25,7 +25,7 @@ const routes = [
   },
   {
     path: "*",
-    component: asyncComponent(() => import("../Page/BlankPage"))
+    component: asyncComponent(() => import("../Page/DefaultPage"))
   }
 ];
 
