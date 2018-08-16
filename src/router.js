@@ -1,10 +1,10 @@
-import React from 'react';
-import { Route, Redirect } from 'react-router-dom';
-import { ConnectedRouter } from 'react-router-redux';
-import { connect } from 'react-redux';
+import React from "react";
+import { Route, Redirect } from "react-router-dom";
+import { ConnectedRouter } from "react-router-redux";
+import { connect } from "react-redux";
 
-import App from './containers/App/App';
-import asyncComponent from './helpers/AsyncFunc';
+import App from "./pages/App";
+import asyncComponent from "./utils/AsyncFunc";
 
 const RestrictedRoute = ({ component: Component, isLoggedIn, ...rest }) => (
   <Route
@@ -15,7 +15,7 @@ const RestrictedRoute = ({ component: Component, isLoggedIn, ...rest }) => (
       ) : (
         <Redirect
           to={{
-            pathname: '/signin',
+            pathname: "/signin",
             state: { from: props.location }
           }}
         />
@@ -29,23 +29,13 @@ const PublicRoutes = ({ history, isLoggedIn }) => {
       <div>
         <Route
           exact
-          path={'/'}
-          component={asyncComponent(() => import('./containers/Page/signin'))}
+          path={"/"}
+          component={asyncComponent(() => import("./pages/Common/SignIn"))}
         />
         <Route
           exact
-          path={'/signin'}
-          component={asyncComponent(() => import('./containers/Page/signin'))}
-        />
-        <Route
-          exact
-          path={'/selfDashboard'}
-          component={asyncComponent(() => import('./containers/Swagger/SwaggerUI'))}
-        />
-        <Route
-          exact
-          path={'/swagger-ui'}
-          component={asyncComponent(() => import('./containers/Swagger/SwaggerUI'))}
+          path={"/signin"}
+          component={asyncComponent(() => import("./pages/Common/SignIn"))}
         />
         <RestrictedRoute
           path="/neptune"

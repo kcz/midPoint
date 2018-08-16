@@ -1,5 +1,5 @@
 import React from 'react';
-import AlgoliaLogo from '../../image/algolia.svg';
+import AlgoliaLogo from '../../assets/images/algolia.svg';
 import { FooterWrapper } from './algoliaComponent.style';
 
 const Footer = () => (

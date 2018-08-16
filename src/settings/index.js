@@ -5,7 +5,8 @@ export default {
 const siteConfig = {
   siteName: 'neptune',
   siteIcon: 'ion-link',
-  footerText: 'neptune ©2018',
+  footerText: 'Neptune ©2018',
+  sentryDSN: 'https://7771093404be421c8d918e65137bbdeb@sentry.io/1261739'
 };
 const themeConfig = {
   topbar: 'themedefault',
